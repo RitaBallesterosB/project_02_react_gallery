@@ -8,6 +8,7 @@ import { Animal4 } from './components/Animal4'
 import { Animal5 } from './components/Animal5'
 import { Animal6 } from './components/Animal6'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Navigation } from './components/Navigation'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/hamster"  element={<Animal5 /> } />
         <Route path="/colibri"  element={<Animal6 /> } />
       </Routes>
+      <Navigation />
     </BrowserRouter>
     
     </>
