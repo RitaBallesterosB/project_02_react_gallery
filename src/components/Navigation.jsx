@@ -9,52 +9,50 @@ import { Animal6 } from './Animal6';
 
 export const Navigation = () => {
   return (
-    <div>
-        <Link to="/zorro">
-        <figure>
+    <div className="mt-1 father">
+        <Link to="/zorro " className="links">
+        <figure className ="image-size">
             <Animal1 />
-            <figcaption>Zorro Salvaje</figcaption>
+            <figcaption >Zorro Salvaje</figcaption>
         </figure>
         </Link>
         
 
-        <Link to="/leopardo">
-            <figure>
+        <Link to="/leopardo"  className="links" >
+            <figure className ="image-size">
                 <Animal2 />
-                <figcaption>Leopardo Salvaje</figcaption>
+                <figcaption >Leopardo Salvaje</figcaption>
             </figure>
         </Link>
 
-        <Link to="/mapache">
-            <figure>
+        <Link to="/mapache "  className="links">
+            <figure className ="image-size">
                 <Animal3 />
-                <figcaption>Mapache Salvaje</figcaption>
+                <figcaption >Mapache Salvaje</figcaption>
             </figure>
         </Link>
 
-        <Link to="/gato">
-            <figure>
+        <Link to="/gato "  className="links">
+            <figure className ="image-size">
                 <Animal4 />
                 <figcaption>Gato Mascota</figcaption>
             </figure>
         </Link>
 
-        <Link to="/hamster">
-            <figure>
+        <Link to="/hamster"  className = "links">
+            <figure className ="image-size" >
                 <Animal5 />
-                 <figcaption>Hamster</figcaption>
+                 <figcaption >Hamster</figcaption>
             </figure>
+        </Link>
 
-            <Link to="/colibri">
-            <figure>
-                <Animal6 />
-                <figcaption>Colibri</figcaption>
-            </figure>
- </Link>
- </Link>
-
-        
-
+            <Link to="/colibri" className = "links">
+                <figure  className ="image-size">
+                    <Animal6 />
+                <figcaption >Colibri</figcaption>
+                </figure>
+           </Link>
+    
     </div>
   )
 }

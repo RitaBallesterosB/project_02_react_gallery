@@ -1,10 +1,16 @@
-// Animal5.js
-import hamster from '../assets/img/hamster_05.jpg';
+// Animal5.jsx
 
-export const Animal5 = () => {
+import hamster from '../assets/img/hamster_05.jpg';
+import PropTypes from 'prop-types';
+
+export const Animal5 = ( {className} ) => {
   return (
-    <div>
-      <img src={hamster} alt="animal hamster" /> 
+    <div  className={`image-container ${className}`}>
+      <img src={hamster} alt="Hamster" className='image' /> 
     </div>
   );
 }
+
+Animal5.propTypes = {
+  clasName: PropTypes.string
+};

@@ -1,10 +1,15 @@
-// Animal5.js
+// Animal6.jsx
 import colibri from '../assets/img/colibri_06.jpg';
+import PropTypes from 'prop-types';
 
-export const Animal6 = () => {
+export const Animal6 = ( {className} ) => {
   return (
-    <div>
-      <img src={colibri} alt="animal colibri" /> 
+    <div  className={`image-container ${className}`}>
+      <img src={colibri} alt="Colibri" className='image' /> 
     </div>
   );
 }
+
+Animal6.propTypes = {
+  clasName: PropTypes.string
+};
