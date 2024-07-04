@@ -11,5 +11,5 @@ export const Animal2 = ( {className} ) => {
 }
 
 Animal2.propTypes = {
-  clasName: PropTypes.string
+  className: PropTypes.string
 };
